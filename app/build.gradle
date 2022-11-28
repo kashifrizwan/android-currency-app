@@ -88,4 +88,10 @@ dependencies {
     // Hilt
     implementation "com.google.dagger:hilt-android:2.42"
     kapt "com.google.dagger:hilt-compiler:2.42"
+
+    // Network response adapter
+    implementation "com.github.haroldadmin:NetworkResponseAdapter:4.1.0"
+
+    // timber
+    implementation 'com.jakewharton.timber:timber:4.7.1'
 }
