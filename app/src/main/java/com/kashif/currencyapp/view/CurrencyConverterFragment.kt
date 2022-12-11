@@ -60,7 +60,9 @@ class CurrencyConverterFragment : Fragment() {
 
     private fun setupClickListeners() {
         binding.btnSwap.setOnClickListener {
-
+            val baseSpinnerSelectedPosition = binding.spinnerBaseCurrency.selectedItemPosition
+            binding.spinnerBaseCurrency.setSelection(binding.spinnerToCurrency.selectedItemPosition)
+            binding.spinnerToCurrency.setSelection(baseSpinnerSelectedPosition)
         }
 
         binding.btnDetails.setOnClickListener {
